@@ -54,3 +54,11 @@ def mean_2d(matrix: list[list[int]])->float:
             sum += matrix[i][j]
     sred = sum / count
     return sred
+
+def max_2d(matrix: list[list[int]])->int:
+    max = matrix[0][0]
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if max < matrix[i][j]:
+                max = matrix[i][j]
+    return max
