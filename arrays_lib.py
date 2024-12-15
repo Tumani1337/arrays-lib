@@ -9,3 +9,10 @@ def prod_1d(array: list[int]) -> int:
     for i in range(len(array)):
         prod *= array[i]
     return prod
+
+def mean_1d(array: list[int]) -> float:
+    summ = 0
+    for i in range(len(array)):
+        summ += array[i]
+    sred = summ / len(array)
+    return sred
