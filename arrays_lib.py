@@ -23,3 +23,10 @@ def max_1d(array: list[int])->int:
         if max < array[i]:
             max = array[i]
     return max
+
+def min_id(array: list[int])->int:
+    min = array[0]
+    for i in range(1, len(array), 1):
+        if min > array[i]:
+            min = array[i]
+    return min
