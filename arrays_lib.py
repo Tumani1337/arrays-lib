@@ -37,3 +37,10 @@ def sum_2d(matrix: list[list[int]])->int:
         for j in range(len(matrix[i])):
             sum += matrix[i][j]
     return sum
+
+def prod_2d(matrix: list[list[int]])->int:
+    prod = 1
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            prod *= matrix[i][j]
+    return prod
