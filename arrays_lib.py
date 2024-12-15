@@ -30,3 +30,10 @@ def min_id(array: list[int])->int:
         if min > array[i]:
             min = array[i]
     return min
+
+def sum_2d(matrix: list[list[int]])->int:
+    sum = 0
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            sum += matrix[i][j]
+    return sum
