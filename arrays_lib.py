@@ -44,3 +44,13 @@ def prod_2d(matrix: list[list[int]])->int:
         for j in range(len(matrix[i])):
             prod *= matrix[i][j]
     return prod
+
+def mean_2d(matrix: list[list[int]])->float:
+    sum = 0
+    count = 0
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            count += 1
+            sum += matrix[i][j]
+    sred = sum / count
+    return sred
