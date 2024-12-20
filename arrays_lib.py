@@ -76,5 +76,11 @@ def min_2d(matrix: list[list[int]])->int:
 def sum_arrays(arr1: list[int], arr2: list[int]) -> list[int]:
     arr3 = []
     for i in range(len(arr1)):
-            arr3.append(arr1[i] + arr2[i])
+        arr3.append(arr1[i] + arr2[i])
+    return arr3
+
+def diff_arrays(arr1: list[int], arr2: list[int])->list[int]:
+    arr3 = []
+    for i in range(len(arr1)):
+        arr3.append(arr1[i] - arr2[i])
     return arr3
