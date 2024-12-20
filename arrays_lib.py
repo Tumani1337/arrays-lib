@@ -70,3 +70,19 @@ def min_2d(matrix: list[list[int]])->int:
             if min > matrix[i][j]:
                 min = matrix[i][j]
     return min
+
+def compare_arrays(arr1: list[int], arr2: list[int])-> list[list[bool]]:
+    arr3 = []
+    arr4 = []
+    for i in range(len(arr1)):
+        arr3.append(arr1[i] > arr2[i])
+    arr4.append(arr3)
+    arr3 = []
+    for i in range(len(arr1)):
+        arr3.append(arr1[i] < arr2[i])
+    arr4.append(arr3)
+    arr3 = []
+    for i in range(len(arr1)):
+        arr3.append(arr1[i] == arr2[i])
+    arr4.append(arr3)
+    return arr4
