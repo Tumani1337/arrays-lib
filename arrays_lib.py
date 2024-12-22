@@ -121,3 +121,18 @@ def filter_equal(arr: list[int], value: int) -> list[int]:
         if arr[i] == value:
             arr1.append(arr[i])
     return arr1
+
+def filter_less(arr: list[int], value):
+    arr_of_smaller = []
+    for i in range(len(arr)):
+        if arr[i] < value:
+            arr_of_smaller.append(arr[i])
+    return arr_of_smaller
+
+def filter_not_equel(arr: list[int], value):
+    arr_not_is = []
+    for i in range(len(arr)):
+        if arr[i] != value:
+            arr_not_is.append(arr[i])
+    return arr_not_is
+
