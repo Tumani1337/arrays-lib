@@ -108,3 +108,16 @@ def compare_arrays(arr1: list[int], arr2: list[int])-> list[list[bool]]:
     arr4.append(arr3)
     return arr4
 
+def filter_greate(arr: list[int], value: int) -> list[int]:
+    arr1 = []
+    for i in range(len(arr)):
+        if arr[i] > value:
+            arr1.append(arr[i])
+    return arr1
+
+def filter_equal(arr: list[int], value: int) -> list[int]:
+    arr1 = []
+    for i in range(len(arr)):
+        if arr[i] == value:
+            arr1.append(arr[i])
+    return arr1
